@@ -17,10 +17,11 @@ include $(TOP)/configure/RULES
 #----------------------------------------
 #  ADD RULES AFTER THIS LINE
 
-example.template: example.generated
+../O.Common/example.db: ../example.generated
 
-example.generated:
-	echo "# some more database logic" > example.generated
+../example.generated:
+	@$(RM) $@
+	echo "# some more database logic" > $@
 
 
 
