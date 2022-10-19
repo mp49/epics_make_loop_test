@@ -5,14 +5,14 @@ The module was created using `makeBaseApp.pl` from base 7.0.7:
 ```
 makeBaseApp.pl -t support loopTest
 ```
-Then do:
+Then I did:
 ```
 cd loopTestApp/Db/  
 echo "# some database logic" > example.template
 echo "include \"example.generated\"" >> example.template
 ```
 
-The `Db/Makefile` is then edited to look like:
+The `Db/Makefile` was then edited to look like:
 ```
 TOP=../..
 include $(TOP)/configure/CONFIG
@@ -30,7 +30,7 @@ example.generated:
 
 ```
 
-Compile the `loopTestApp/Db` directory using these different versions of EPICS:
+I then compiled the `loopTestApp/Db` directory using these different versions of EPICS:
 1. 3.14.12.8
 2. 3.15.9
 3. 7.0.7
