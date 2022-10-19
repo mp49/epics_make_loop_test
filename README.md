@@ -123,5 +123,17 @@ make[1]: Entering directory `/SNS/users/mkp/epics_make_loop_test/loopTestApp/Db/
 same loop.
 
 A workaround is to make this edit to the `Db/Makefile`:
+```
+diff --git a/loopTestApp/Db/Makefile b/loopTestApp/Db/Makefile
+index befc80a..995fdf0 100644
+--- a/loopTestApp/Db/Makefile
++++ b/loopTestApp/Db/Makefile
+@@ -21,6 +21,6 @@ example.template: example.generated
 
+ example.generated:
+        echo "# some more database logic" > example.generated
+-
++       cp ../example.template .
+
+```
 
