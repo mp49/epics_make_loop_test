@@ -5,11 +5,14 @@ The module was created using `makeBaseApp.pl` from base 7.0.7:
 ```
 makeBaseApp.pl -t support loopTest
 ```
-cd loopTestApp/Db/
+Then do:
+```
+cd loopTestApp/Db/  
 echo "# some database logic" > example.template
 echo "include \"example.generated\"" >> example.template
+```
 
-The Db/Makefile is then edited to look like:
+The `Db/Makefile` is then edited to look like:
 ```
 TOP=../..
 include $(TOP)/configure/CONFIG
