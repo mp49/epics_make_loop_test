@@ -35,6 +35,8 @@ Compile the `loopTestApp/Db` directory using these different versions of EPICS:
 2. 3.15.9
 3. 7.0.7
 
+Edit the `configure/RELEASE` to point to your local base installations.
+
 Using 3.14.12.8:
 ```
 [mkp@bl100-dassrv1 Db]$ mm
