@@ -1,0 +1,6 @@
+
+EPICS_BASE = /home/controls/epics/base/base-7.0.7
+#EPICS_BASE = /home/controls/epics/base/base-3.15.9
+#EPICS_BASE = /home/controls/epics/base/base-3.14.12.8
+
+

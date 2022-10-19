@@ -1,0 +1,2 @@
+# some database logic
+include "example.generated"
