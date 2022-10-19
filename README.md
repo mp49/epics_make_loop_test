@@ -54,6 +54,7 @@ mv example.tmp ../O.Common/example.db
 Installing created db file ../../../db/example.db
 make[1]: Leaving directory `/SNS/users/mkp/epics_make_loop_test/loopTestApp/Db/O.linux-x86_64'
 ```
+which completed normally.
 
 Using 3.15.9:
 ```
@@ -122,7 +123,9 @@ make[1]: Entering directory `/SNS/users/mkp/epics_make_loop_test/loopTestApp/Db/
 ^Cmake: *** [install.linux-x86_64] Interrupt
 ```
 
-same loop.
+same infinite loop.
+
+This was tested on both RHEL7 (GNU Make 3.82) and RHEL8 (GNU Make 4.2.1).
 
 A workaround is to make this edit to the `Db/Makefile`:
 ```
