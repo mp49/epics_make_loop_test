@@ -142,3 +142,14 @@ index befc80a..995fdf0 100644
 
 ```
 
+After discussion on tech-talk, this seems to be the best fix:
+```
+../example.template: example.generated
+
+example.generated:
+	echo "# some more database logic" > $@
+```
+See: https://epics.anl.gov/tech-talk/2022/msg01686.php
+
+
+
